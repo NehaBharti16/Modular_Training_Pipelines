@@ -8,6 +8,7 @@ project_name = "Training_Pipeline"
 
 list_of_files = [
     #".github/workflows/.gitkeep", # Giving indication to make folder in github which we used in CI/CD deployment
+    # Source code structure
     f"src/{project_name}/__init__.py",
     f"src/{project_name}/components/__init__.py",
     f"src/{project_name}/components/data_ingestion.py",
@@ -20,8 +21,26 @@ list_of_files = [
     f"src/{project_name}/exception.py",
     f"src/{project_name}/logger.py",
     f"src/{project_name}/utils.py",
+    # Project root files
     "app.py",
     "Dockerfile",
+    "setup.py",
+    "requirements.txt",
+
+    # Config files structure
+    "conf/config.yaml",
+    "conf/dataset/california_houses.yaml",
+    "conf/dataset/titanic.yaml",
+    "conf/task/regression.yaml",
+    "conf/task/classification.yaml",
+    "conf/model/linear_regression.yaml",
+    "conf/model/logistic_regression.yaml",
+    "conf/model/random_forest_regressor.yaml",
+    "conf/model/random_forest_classifier.yaml",
+    "conf/model/gradient_boosting_regressor.yaml",
+    "conf/model/gradient_boosting_classifier.yaml",
+    "conf/training/default.yaml",
+    "conf/logging/mlflow.yaml",
     
 ]
 
